@@ -179,7 +179,7 @@ zero_trust_mcp/
 
 ## API Reference
 
-### `PolicyEngine`
+### PolicyEngine
 
 ```python
 from zero_trust_mcp import PolicyEngine
@@ -195,7 +195,7 @@ decision = engine.evaluate(tool_call)
 # decision.remediation: Optional[str]
 ```
 
-### `ToolCall`
+### ToolCall
 
 ```python
 from zero_trust_mcp import ToolCall
@@ -208,7 +208,7 @@ call = ToolCall(
 )
 ```
 
-### `Enforcer`
+### Enforcer
 
 ```python
 from zero_trust_mcp import Enforcer
