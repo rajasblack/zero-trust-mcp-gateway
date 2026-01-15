@@ -1,6 +1,15 @@
 policy_id: customer_support_policy
 version: "1.0"
 default: deny
+validate:
+  reject_unknown_args: true
+  max_arg_bytes: 10000
+allow_rules:
+  - tool: hello
+    constraints:
+      name:
+        type: string
+        required: true
 
 allow_rules:
   - tool: search
@@ -28,6 +37,13 @@ allow_rules:
         type: string
         description: "Customer identifier"
     description: "Allow creating tickets with valid priority levels"
+  
+  - tool: "hello"
+    roles: ["support"]
+    constraints:
+      name:
+        type: "string"
+        required: true
 
 deny_rules:
   - tool: delete_user
