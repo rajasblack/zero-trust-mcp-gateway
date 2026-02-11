@@ -250,4 +250,13 @@ Contributions welcome:
   4. Agent framework integrations
 Open an issue or PR.
 
+## Citation
+
+If you use this work, please cite:
+
+Rajesh Kumar Sampath Kumar (2026).  
+Zero-Trust MCP Gateway (v0.1.0). 
+[![DOI](https://zenodo.org/badge/1134595897.svg)](https://doi.org/10.5281/zenodo.18614591)
+Zenodo. https://doi.org/10.5281/zenodo.18614591
+
 #### Zero trust isn’t a feature. It’s an architecture.
